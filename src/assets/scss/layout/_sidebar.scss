@@ -1,0 +1,89 @@
+.sidebar {
+    max-width: 220px;
+    min-width: 220px;
+    height: 100svh;
+    border-right: 1px solid $white;
+    box-shadow: 0px 4px 15px 0px #00000040;
+
+    .sidebar_logo {
+        text-align: center;
+        color: $white;
+        font-family: $popins;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 100%;
+        letter-spacing: -1%;
+        border-bottom: 1px solid $white;
+        padding: 20px 0px;
+    }
+
+    .sidebar_list {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+    }
+
+    .sidebar_item a {
+        display: flex;
+        align-items: center;
+        padding-left: 14px;
+        gap: 12px;
+        width: 180px;
+        height: 35px;
+        cursor: pointer;
+        border: 1px solid $white;
+        border-radius: 2px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -1.4px;
+            left: -52px;
+            // 22
+            background: rgba($white, 0.15);
+            width: 12px;
+            height: 35px;
+            border-radius: 0px 2px 2px 0px;
+            transition: 0.4s ease-in-out;
+        }
+
+        &:hover {
+            background: rgba($white, 0.15);
+            transition: 0.6s ease-in-out;
+            border: 1px solid rgba($white, 0);
+
+            &::before {
+                left: -22px;
+            }
+        }
+
+        .sidebar_text {
+            color: $white;
+            font-family: $popins;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 100%;
+            letter-spacing: -1%;
+        }
+
+        .sidebar_arrow {
+            position: absolute;
+            top: 2px;
+            right: 0px;
+            color: $white;
+            font-size: 29px;
+        }
+    }
+
+    .sidebar_item a.active {
+        background: rgba($white, 0.15);
+        border: 1px solid rgba($white, 0);
+
+        &::before {
+            left: -22px;
+        }
+    }
+}

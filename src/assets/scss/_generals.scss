@@ -1,0 +1,45 @@
+body {
+    width: 100%;
+    height: 100svh;
+    background: url(../../assets/images/bg_foto/1.png) no-repeat center;
+    background-size: cover;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+input,
+select {
+    outline: none;
+    border: none;
+}
+
+.main {
+    display: flex;
+}
+
+.routes_page {
+    width: 100%;
+}
+
+.container {
+    padding: 0px 24px;
+    width: 100%;
+}

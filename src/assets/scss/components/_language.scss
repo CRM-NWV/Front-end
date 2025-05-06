@@ -1,0 +1,13 @@
+.language_select {
+    background: rgba($white, 0.3);
+    padding: 7px 10px;
+    box-shadow: 0px 3px 40px 0px #0000000D;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    .language_world_icon {
+        color: $white;
+        font-size: 24px;
+    }
+}
