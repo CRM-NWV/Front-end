@@ -10,7 +10,7 @@ export default function Sidebar() {
             <h1 className='sidebar_logo'>Logo</h1>
 
             <ul className="sidebar_list">
-                <SidebarItem to="/" icon={Icon1} text={"Дашборд"} />
+                <SidebarItem to="/dashboard" icon={Icon1} text={"Дашборд"} />
                 <SidebarItem to="/mentors" icon={Icon2} text={"Менторы"} />
                 <SidebarItem to="/courses" icon={Icon3} text={"Курсы"} />
             </ul>
