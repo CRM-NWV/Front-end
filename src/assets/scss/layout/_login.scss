@@ -1,0 +1,147 @@
+.login-page {
+    display: flex;
+    height: 100vh;
+
+    .left-panel {
+        width: 50%;
+        background: url('/src/assets//images//bg_foto/loginbg.png');
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 51px;
+
+        .logo {
+            font-size: 60px;
+            font-weight: 600;
+            margin-bottom: 40px;
+            font-family: $popins;
+            line-height: 100%;
+        }
+
+
+        .login-description {
+            font-family: $popins;
+            font-weight: 500;
+            font-style: italic;
+            font-size: 56px;
+            line-height: 120%;
+            margin-top: 300px;
+
+        }
+    }
+
+    .right-panel {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+
+        .login-box {
+            background: white;
+            padding: 38px;
+            border-radius: 12px;
+            box-shadow: 0px 0px 33px 0px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 450px;
+            height: 590px;
+
+            .login-box-subtitle {
+                font-family: $popins;
+                color: rgba(90, 90, 93, 1);
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 100%;
+                margin-bottom: 16px;
+                margin-top: 60px;
+            }
+
+            .login-box-title {
+                font-family: $popins;
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 100%;
+                margin-bottom: 47px;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 20px;
+
+                    span {
+                        font-family: $popins;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 100%;
+                        color: rgba(52, 64, 84, 1);
+                        margin-bottom: 7px;
+
+                    }
+
+                    input {
+                        padding: 14px;
+                        border: 3px solid #ccc;
+                        border-radius: 10px;
+
+
+                    }
+
+                    input::placeholder {
+                        font-family: $popins;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 100%;
+                    }
+
+                    .label-row {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 7px;
+
+                        .login-box-remember {
+                            font-family: $popins;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 100%;
+                            color: rgba(21, 112, 239, 1);
+                            cursor: pointer;
+
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+
+                button {
+                    padding: 15px;
+                    background: #007cf0;
+                    color: white;
+                    border: none;
+                    border-radius: 6px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    transition: background 0.3s;
+                    font-family: $popins;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    vertical-align: middle;
+
+
+                    &:hover {
+                        background: #005fc0;
+                    }
+                }
+            }
+        }
+    }
+}

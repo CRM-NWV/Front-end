@@ -1,11 +1,13 @@
-import "./App.css"
+import { Routes, Route } from "react-router-dom";
+import Login from "./Layout/Login/Login";
+import Main from "./Layout/Main/index";
 import "./assets/scss/main.scss";
-import Layout from "./Layout/Layout";
 
-export default function App() {
+export default function Layout() {
   return (
-    <>
-      <Layout />
-    </>
-  )
+    <Routes>
+      <Route path="/" element={<Login />} />
+      <Route path="/dashboard" element={<Main />} />
+    </Routes>
+  );
 }
