@@ -58,8 +58,8 @@ const Login = () => {
 
       <div className="right-panel">
         <div className="login-box">
-          <p className="login-box-subtitle">Создайте новый аккаунт</p>
-          <h2 className="login-box-title">Регистрация</h2>
+          <p className="login-box-subtitle">Рады видеть вас снова!</p>
+          <h2 className="login-box-title">Войдите в аккаунт</h2>
 
           {error && <p className="error">{error}</p>}
 
@@ -84,7 +84,7 @@ const Login = () => {
                 required
               />
             </label>
-            <button type="submit">Зарегистрироваться</button>
+            <button type="submit">Войти</button>
           </form>
         </div>
       </div>
