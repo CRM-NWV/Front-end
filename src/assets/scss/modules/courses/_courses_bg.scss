@@ -1,0 +1,107 @@
+.courses_bg {
+    margin-top: 40px;
+    width: 100%;
+    border-radius: 7px;
+    padding: 20px 23px;
+
+    .courses_title {
+        color: $white;
+        font-family: $popins;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 100%;
+        letter-spacing: -1%;
+        margin-bottom: 30px;
+    }
+
+    .courses_all_count {
+        padding-top: 5px;
+        color: $white;
+        font-family: $popins;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 100%;
+        letter-spacing: -1%;
+    }
+
+    .courses_list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        flex-wrap: wrap;
+        gap: 25px;
+        margin-top: 16px;
+    }
+
+    .courses_item {
+        min-width: 250px;
+        height: 165px;
+        border-radius: 10px;
+        background: rgba($black, 0.15);
+        box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.1);
+        position: relative;
+        padding: 13px 15px;
+
+        img {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .courses_gr_count {
+            border-radius: 3px;
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            color: $white;
+            padding: 0.5px 7px 0px 7px;
+            font-family: $nunito;
+            font-weight: 800;
+            font-size: 11px;
+            line-height: 25px;
+            background: rgba($black, 0.2);
+            box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.1);
+        }
+
+        .courses_name {
+            padding-top: 10px;
+            color: $white;
+            font-family: $nunito;
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 25px;
+        }
+
+        .courses_subject {
+            color: $white;
+            font-family: $nunito;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: 0.5px;
+        }
+
+        .courses_phone {
+            padding-top: 5px;
+            color: $white;
+            font-family: $popins;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 100%;
+            letter-spacing: -1%;
+        }
+
+        .courses_date {
+            padding-top: 9px;
+            color: $white;
+            font-family: $popins;
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 25px;
+            letter-spacing: 2px;
+        }
+    }
+}
